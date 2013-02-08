@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+<data noupdate="1">
+    <record model="ir.sequence.type" id="seq_type_partner_code">
+        <field name="name">Partner Code</field>
+        <field name="code">res.partner</field>
+    </record>
+    <record model="ir.sequence" id="seq_partner_code">
+        <field name="name">Partner Code</field>
+        <field name="code">res.partner</field>
+        <field name="padding">6</field>
+        <field name="next_number"></field>
+        <!-- in case you need to attach it to a specific company <field name="company_id" ref="xx"/> -->
+</record>
+</data>
+</openerp>
