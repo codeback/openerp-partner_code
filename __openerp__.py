@@ -4,7 +4,7 @@
     'name': 'Partner Code',
     'version': '1.0',
     'category': 'Partners',
-    'description': """Personaliza el id del partner para que sea autoincremental""",
+    'description': """OpenERP module to enable autoincremental partner's reference""",
     'author': 'Codeback Software (info@codeback.es)',
     'website': 'codeback.es',
     'license': 'AGPL-3',
