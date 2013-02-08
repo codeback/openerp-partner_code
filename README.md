@@ -1,0 +1,2 @@
+openerp-partner_code
+====================
