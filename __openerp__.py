@@ -2,15 +2,15 @@
 
 {
     'name': 'Partner Code',
-    'version': '1.0',
+    'version': '1.1',
     'category': 'Partners',
     'description': """OpenERP module to enable autoincremental partner's reference""",
     'author': 'Codeback Software (info@codeback.es)',
     'website': 'codeback.es',
     'license': 'AGPL-3',
-    'depends': [],
+    'depends': ['base'],
     'init_xml': [],
-    'update_xml': ['res_partner.xml'],
+    'update_xml': ['res_partner.xml', 'res_partner_view.xml'],
     'demo_xml': [],
     'active': True,
     'installable': True,

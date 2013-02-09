@@ -8,8 +8,9 @@
     <record model="ir.sequence" id="seq_partner_code">
         <field name="name">Partner Code</field>
         <field name="code">res.partner</field>
-        <field name="padding">6</field>
+        <field name="padding">5</field>
         <field name="next_number"></field>
+        <field name="prefix">NF</field>
         <!-- in case you need to attach it to a specific company <field name="company_id" ref="xx"/> -->
 </record>
 </data>

@@ -3,6 +3,8 @@ from osv import osv, fields
 class res_partner(osv.osv):
     _inherit = 'res.partner'
 
+    _sql_constraints = [('ref_uniq','unique(ref)', 'Ref. must be unique!')]
+
     def create(self, cr, uid, vals, context={}):
         if (not 'ref' in vals) or (vals['ref'] == False):
             vals['ref'] = self.pool.get('ir.sequence').get(cr, uid, 'res.partner')
@@ -11,4 +13,5 @@ class res_partner(osv.osv):
     _defaults = {
         'ref': lambda obj, cr, uid, context: obj.pool.get('ir.sequence').get(cr, uid, 'res_partner'),
     }
+
 res_partner()
